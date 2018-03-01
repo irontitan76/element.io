@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import Text from './Text';
+import { Block } from './';
 
 class Paragraph extends Component {
   constructor() {
@@ -24,7 +24,7 @@ class Paragraph extends Component {
   render() {
     const { text } = this.state;
 
-    return <Text content={text}  />;
+    return <Block content={text}  />;
   }
 }
 

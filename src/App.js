@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 
-import { Box, Caption, Home, Hook, Navigation, NavModal, Paragraph, Quote, Subtitle, Text, Value } from './elements';
+import { Block, Box, Button, Home, Input, Link, Navigation } from './elements';
 
 class App extends Component {
   constructor() {
@@ -18,17 +19,24 @@ class App extends Component {
     const { items } = this.state;
 
     return (
-      <article id='app'>
-        <Navigation type='top' items={items}/>
-        <NavModal type='left' push={true}/>
-        <Text></Text>
-      </article>
+      <Router>
+        <Box id='app'>
+          <Navigation type='top' items={items} />
+          <Button type='success'>Submit</Button>
+          <Input label='Text' placeholder='Enter text here'/>
+        </Box>
+      </Router>
     );
   }
 }
 
 export default App;
 
+
+// <Heading content='Heading 1' />
+// <Subtitle content='Subtitle 2' />
+// <Caption content='By Ross Sheppard' />
+// <Paragraph content='Lorem ipsum...' />
 
 /*
 <Box tag='section'>

@@ -40,23 +40,6 @@ class NavModal extends Component {
       zIndex
     } = this.props;
 
-    // height: 0, what changes
-    // left: ''
-    // right: ''
-    // top: top || type === 'top' ? 0 : 'auto',
-    // bottom: bottom || type === 'bottom' ? 0 : 'auto'
-    // width: '100%'
-
-    // open => height to height%
-    const h = type === 'top' || type === 'bottom';
-
-    // bottom: bottom || type === 'bottom' ? 0 : 'auto',
-    // height: height || h ? '0' : '100%',
-    // left: left || type === 'left' ? 0 : 'auto',
-    // right: right || type === 'right' ? 0 : 'auto',
-    // top: top || type === 'top' ? 0 : 'auto',
-    // width: width || h ? '100%' : '0'
-
     this.setState({
       style: {
         div: {
