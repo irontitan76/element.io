@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link as ReactLink, NavLink as ReactNavLink } from 'react-router-dom';
 
-import { Block } from './';
+import { Block } from '../';
 
 class Link extends Component {
   render() {

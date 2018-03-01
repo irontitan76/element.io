@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { StyleSheet, css } from 'aphrodite/no-important';
-import { breakLine, checkForFlatStyles } from './utils';
+import { breakLine, checkForFlatStyles } from '../utils';
 
 class Block extends Component {
   componentWillMount() {

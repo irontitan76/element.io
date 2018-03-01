@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import './App.css';
 
-import { Block, Box, Button, Home, Input, Link, Navigation } from './elements';
+import { Block, Box, Button, Slider, Home, Input, Link, Navigation } from './elements';
 
 class App extends Component {
   constructor() {
@@ -22,8 +21,7 @@ class App extends Component {
       <Router>
         <Box id='app'>
           <Navigation type='top' items={items} />
-          <Button type='success'>Submit</Button>
-          <Input label='Text' placeholder='Enter text here'/>
+          <Slider />
         </Box>
       </Router>
     );

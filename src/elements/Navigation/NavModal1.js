@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { css, StyleSheet } from 'aphrodite/no-important';
 
-import { Box, Button } from './';
+import { Box, Button } from '../';
 
 class NavModal extends Component {
   constructor() {
